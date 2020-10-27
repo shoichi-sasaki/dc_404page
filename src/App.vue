@@ -1,7 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="It'll be 404 page. please wait..."/>
+    "It'll be 404 page. please wait..."
+
+    404 NOT FOUND
+    <img alt="404 image character." src="./assets/Scarecrow.png">
+    I have bad news for you
+
+    <br/>
+    The page you are looking for might be removed or is temporarily unavailable
+
+    <button>BACK TO HOMEPAGE</button>
+
+    Your name @ DevChallenges.io
+    
   </div>
 </template>
 

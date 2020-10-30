@@ -36,28 +36,38 @@ export default {
 <style>
 .f-container{
   display:flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
+/* @media screen {
+  .img-box{
+    display:none;
+  }
+} */
 .img-box{
   flex-basis:43%;
+  /* min-width:200px; */
 }
 .text-box{
   flex-basis:57%;
+  /* min-width:200px; */
 }
 img {
-  position: absolute;
-  left: 5.35%;
+  position: relative;
+  /* left: 5.35%; */
+  left: 10%;
   right: 57.21%;
-  top: 24.54%;
-  bottom: 34.03%;
+  /* top: 24.54%;
+  bottom: 34.03%; */
   max-width:539.22px;
   max-height:447.43px;
 }
 .title{
-  position: absolute;
+  position: relative;
   width: 586px;
   height: 190px;
-  left: 735px;
-  top: 265px;
+  /* left: 735px;
+  top: 265px; */
 
   font-family: Space Mono;
   font-style: normal;
@@ -70,11 +80,12 @@ img {
 }
 
 .detail{
-  position: absolute;
+  position: relative;
   width: 381px;
   height: 108px;
-  left: 736px;
-  top: 491px;
+  /* left: 736px;
+  top: 491px; */
+  top: 30px;
 
   font-family: Space Mono;
   font-style: normal;
@@ -86,11 +97,12 @@ img {
   color: #4F4F4F;
 }
 button{
-  position: absolute;
+  position: relative;
   width: 216px;
   height: 68px;
-  left: 740px;
-  top: 663px;
+  /* left: 740px;
+  top: 663px; */
+  top:80px;
 
   background: #333333;
 

@@ -9,7 +9,7 @@
 <style>
 #header{
     width:100%;
-    height:240px;
+    height:200px;
 }
 .header-text {
     position: absolute;

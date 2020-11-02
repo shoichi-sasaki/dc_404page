@@ -28,14 +28,18 @@
 
     color: #333333;
 }
-</style>
-<style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+  .header-text {
+    position: absolute;
+    width: 300px;
+    height: 25px;
+    left: 24px;
+    top: 20px;
+  }
+  #header{
+    /* width:100%; */
+    height:110px;
+  }
+}
 </style>

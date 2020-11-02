@@ -34,31 +34,24 @@ export default {
 </script>
 
 <style>
+#app{
+  /* width:100%; */
+}
 .f-container{
   display:flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
-/* @media screen {
-  .img-box{
-    display:none;
-  }
-} */
 .img-box{
   flex-basis:43%;
-  /* min-width:200px; */
 }
 .text-box{
   flex-basis:57%;
-  /* min-width:200px; */
 }
 img {
-  position: relative;
-  /* left: 5.35%; */
+  /* position: relative; */
   left: 10%;
   right: 57.21%;
-  /* top: 24.54%;
-  bottom: 34.03%; */
   max-width:539.22px;
   max-height:447.43px;
 }
@@ -66,8 +59,6 @@ img {
   position: relative;
   width: 586px;
   height: 190px;
-  /* left: 735px;
-  top: 265px; */
 
   font-family: Space Mono;
   font-style: normal;
@@ -83,8 +74,6 @@ img {
   position: relative;
   width: 381px;
   height: 108px;
-  /* left: 736px;
-  top: 491px; */
   top: 30px;
 
   font-family: Space Mono;
@@ -100,18 +89,9 @@ button{
   position: relative;
   width: 216px;
   height: 68px;
-  /* left: 740px;
-  top: 663px; */
   top:80px;
 
   background: #333333;
-
-  /* text style */
-  /* position: absolute; */
-  /* width: 130px;
-  height: 21px;
-  left: 783px;
-  top: 687px; */
 
   font-family: Space Mono;
   font-style: normal;
@@ -124,5 +104,43 @@ button{
   text-transform: uppercase;
 
   color: #FFFFFF;
+}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+  img {
+    width:286px;
+    /* max-height:447.43px; */
+  }
+  .title{
+    position: relative;
+    width: 350px;
+    height: 142px;
+
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+
+    color: #333333;
+  }
+  .detail{
+    position: relative;
+    width: 328px;
+    height: 81px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
+  button{
+    position: relative;
+    width: 216px;
+    height: 68px;
+    top:80px;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 </style>

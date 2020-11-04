@@ -20,13 +20,11 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
-    // HelloWorld
     Header,
     Footer
   }
@@ -36,6 +34,7 @@ export default {
 <style>
 #app{
   /* width:100%; */
+  /* position:relative; */
 }
 .f-container{
   display:flex;
@@ -43,22 +42,27 @@ export default {
   justify-content: space-around;
 }
 .img-box{
+  position:relative;
+  align-content: center;
   flex-basis:43%;
 }
 .text-box{
+  position:relative;
+  height: 500px;
   flex-basis:57%;
 }
 img {
-  /* position: relative; */
+  position: relative;
   left: 10%;
-  right: 57.21%;
+  /* right: 57.21%; */
   max-width:539.22px;
   max-height:447.43px;
 }
 .title{
-  position: relative;
+  position: absolute;
   width: 586px;
   height: 190px;
+  top: 0px;
 
   font-family: Space Mono;
   font-style: normal;
@@ -71,10 +75,10 @@ img {
 }
 
 .detail{
-  position: relative;
+  position: absolute;
   width: 381px;
   height: 108px;
-  top: 30px;
+  top: 230px;
 
   font-family: Space Mono;
   font-style: normal;
@@ -86,10 +90,11 @@ img {
   color: #4F4F4F;
 }
 button{
-  position: relative;
+  position: absolute;
   width: 216px;
   height: 68px;
-  top:80px;
+  top: 400px;
+  /* bottom: -20px; */
 
   background: #333333;
 
@@ -111,10 +116,14 @@ button{
     width:286px;
     /* max-height:447.43px; */
   }
+  .text-box{
+    height: 480px;
+  }
   .title{
     position: relative;
     width: 350px;
     height: 142px;
+    top: 30px;
 
     font-family: Space Mono;
     font-style: normal;
@@ -126,18 +135,19 @@ button{
     color: #333333;
   }
   .detail{
-    position: relative;
+    /* position: relative; */
     width: 328px;
     height: 81px;
+    top: 200px;
 
     font-size: 18px;
     line-height: 27px;
   }
   button{
-    position: relative;
+    /* position: relative; */
     width: 216px;
     height: 68px;
-    top:80px;
+    top:320px;
 
     font-size: 14px;
     line-height: 21px;

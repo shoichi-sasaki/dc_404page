@@ -39,12 +39,15 @@ export default {
 .f-container{
   display:flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 .img-box{
   position:relative;
   align-content: center;
   flex-basis:43%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .text-box{
   position:relative;
@@ -52,8 +55,8 @@ export default {
   flex-basis:57%;
 }
 img {
-  position: relative;
-  left: 10%;
+  /* position: absolute; */
+  /* left: 10%; */
   /* right: 57.21%; */
   max-width:539.22px;
   max-height:447.43px;
